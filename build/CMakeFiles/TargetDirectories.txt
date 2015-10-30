@@ -1,0 +1,7 @@
+/home/meng/cspm/build/CMakeFiles/clean_test_results.dir
+/home/meng/cspm/build/CMakeFiles/download_extra_data.dir
+/home/meng/cspm/build/CMakeFiles/doxygen.dir
+/home/meng/cspm/build/gtest/CMakeFiles/gtest.dir
+/home/meng/cspm/build/gtest/CMakeFiles/gtest_main.dir
+/home/meng/cspm/build/CMakeFiles/run_tests.dir
+/home/meng/cspm/build/CMakeFiles/tests.dir
