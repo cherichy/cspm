@@ -72,14 +72,39 @@ face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o.provides: face_detect/CMake
 
 face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o.provides.build: face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o
 
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o: face_detect/CMakeFiles/facedetect.dir/flags.make
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o: /home/meng/cspm/src/face_detect/src/facedetect.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/meng/cspm/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o"
+	cd /home/meng/cspm/build/face_detect && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/facedetect.dir/src/facedetect.cpp.o -c /home/meng/cspm/src/face_detect/src/facedetect.cpp
+
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/facedetect.dir/src/facedetect.cpp.i"
+	cd /home/meng/cspm/build/face_detect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/meng/cspm/src/face_detect/src/facedetect.cpp > CMakeFiles/facedetect.dir/src/facedetect.cpp.i
+
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/facedetect.dir/src/facedetect.cpp.s"
+	cd /home/meng/cspm/build/face_detect && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/meng/cspm/src/face_detect/src/facedetect.cpp -o CMakeFiles/facedetect.dir/src/facedetect.cpp.s
+
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.requires:
+.PHONY : face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.requires
+
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.provides: face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.requires
+	$(MAKE) -f face_detect/CMakeFiles/facedetect.dir/build.make face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.provides.build
+.PHONY : face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.provides
+
+face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.provides.build: face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o
+
 # Object files for target facedetect
 facedetect_OBJECTS = \
-"CMakeFiles/facedetect.dir/src/main.cpp.o"
+"CMakeFiles/facedetect.dir/src/main.cpp.o" \
+"CMakeFiles/facedetect.dir/src/facedetect.cpp.o"
 
 # External object files for target facedetect
 facedetect_EXTERNAL_OBJECTS =
 
 /home/meng/cspm/devel/lib/face_detect/facedetect: face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o
+/home/meng/cspm/devel/lib/face_detect/facedetect: face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o
 /home/meng/cspm/devel/lib/face_detect/facedetect: face_detect/CMakeFiles/facedetect.dir/build.make
 /home/meng/cspm/devel/lib/face_detect/facedetect: /opt/ros/indigo/lib/libcv_bridge.so
 /home/meng/cspm/devel/lib/face_detect/facedetect: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
@@ -160,6 +185,7 @@ face_detect/CMakeFiles/facedetect.dir/build: /home/meng/cspm/devel/lib/face_dete
 .PHONY : face_detect/CMakeFiles/facedetect.dir/build
 
 face_detect/CMakeFiles/facedetect.dir/requires: face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o.requires
+face_detect/CMakeFiles/facedetect.dir/requires: face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o.requires
 .PHONY : face_detect/CMakeFiles/facedetect.dir/requires
 
 face_detect/CMakeFiles/facedetect.dir/clean:

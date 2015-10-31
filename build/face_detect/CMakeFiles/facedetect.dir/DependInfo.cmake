@@ -4,6 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/meng/cspm/src/face_detect/src/facedetect.cpp" "/home/meng/cspm/build/face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o"
   "/home/meng/cspm/src/face_detect/src/main.cpp" "/home/meng/cspm/build/face_detect/CMakeFiles/facedetect.dir/src/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")

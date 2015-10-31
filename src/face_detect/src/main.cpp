@@ -5,6 +5,8 @@ using namespace cv;
 
 static const char WINDOW[]="RGB Image";
 static const std_msgs::Empty e;
+static CvMemStorage *storage = 0;
+static CvHaarClassifierCascade *cascade = 0;
 
 
 class cspm_robot{
@@ -17,7 +19,7 @@ class cspm_robot{
     ros::Publisher vel_pub;
     Mat last_image;//上一张图片
     Mat current_image;//下一张图片
-    bool flag = false;
+    bool flag;
 
     void forward(float i){
         cmd_vel = fresh_vel;
@@ -67,6 +69,9 @@ class cspm_robot{
           return;
         }
         current_image = cv_ptr->image;
+        CvSeq* faces = cvHaarDetectObjects( img, cascade, storage,
+                                                    1.1, 2, 0,
+                                                    cvSize(30, 30) );
         imshow(WINDOW,current_image);
         int k = waitKey(1);
         if(k != -1)
@@ -104,6 +109,9 @@ public:
 int main(int argc, char **argv){
     ros::init(argc,argv,"facedetect");
     cv::namedWindow(WINDOW);
+    cascade = (CvHaarClassifierCascade*)cvLoad("haarcascade_frontalface_alt.xml",0,0,0);
+    storage = cvCreateMemStorage();
+
 
     cspm_robot cr(argv[1]);
 

@@ -14,6 +14,9 @@
     #include <geometry_msgs/Twist.h>
 
 
+    void detect_and_draw( IplImage *image);
+
+
 
     #define SPACE 1048608
     #define ENTER 1048586

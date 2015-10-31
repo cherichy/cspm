@@ -373,6 +373,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/meng/cspm/build && $(MAKE) -f face_detect/CMakeFiles/std_msgs_generate_messages_py.dir/build.make face_detect/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/facedetect.o: src/facedetect.cpp.o
+.PHONY : src/facedetect.o
+
+# target to build an object file
+src/facedetect.cpp.o:
+	cd /home/meng/cspm/build && $(MAKE) -f face_detect/CMakeFiles/facedetect.dir/build.make face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.o
+.PHONY : src/facedetect.cpp.o
+
+src/facedetect.i: src/facedetect.cpp.i
+.PHONY : src/facedetect.i
+
+# target to preprocess a source file
+src/facedetect.cpp.i:
+	cd /home/meng/cspm/build && $(MAKE) -f face_detect/CMakeFiles/facedetect.dir/build.make face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.i
+.PHONY : src/facedetect.cpp.i
+
+src/facedetect.s: src/facedetect.cpp.s
+.PHONY : src/facedetect.s
+
+# target to generate assembly for a file
+src/facedetect.cpp.s:
+	cd /home/meng/cspm/build && $(MAKE) -f face_detect/CMakeFiles/facedetect.dir/build.make face_detect/CMakeFiles/facedetect.dir/src/facedetect.cpp.s
+.PHONY : src/facedetect.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -426,6 +450,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/facedetect.o"
+	@echo "... src/facedetect.i"
+	@echo "... src/facedetect.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
